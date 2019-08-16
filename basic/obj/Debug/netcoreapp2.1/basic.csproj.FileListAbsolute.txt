@@ -30,3 +30,4 @@ C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.1\basic.Views.pdb
 C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.1\basic.dll
 C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.1\basic.pdb
 C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.1\basic.csproj.CopyComplete
+C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurantes\List.g.cshtml.cs
