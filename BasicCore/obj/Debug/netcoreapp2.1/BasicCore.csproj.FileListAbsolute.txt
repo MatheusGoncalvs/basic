@@ -1,0 +1,9 @@
+C:\Users\Teu\source\repos\basic\BasicCore\bin\Debug\netcoreapp2.1\BasicCore.deps.json
+C:\Users\Teu\source\repos\basic\BasicCore\bin\Debug\netcoreapp2.1\BasicCore.dll
+C:\Users\Teu\source\repos\basic\BasicCore\bin\Debug\netcoreapp2.1\BasicCore.pdb
+C:\Users\Teu\source\repos\basic\BasicCore\obj\Debug\netcoreapp2.1\BasicCore.csprojAssemblyReference.cache
+C:\Users\Teu\source\repos\basic\BasicCore\obj\Debug\netcoreapp2.1\BasicCore.csproj.CoreCompileInputs.cache
+C:\Users\Teu\source\repos\basic\BasicCore\obj\Debug\netcoreapp2.1\BasicCore.AssemblyInfoInputs.cache
+C:\Users\Teu\source\repos\basic\BasicCore\obj\Debug\netcoreapp2.1\BasicCore.AssemblyInfo.cs
+C:\Users\Teu\source\repos\basic\BasicCore\obj\Debug\netcoreapp2.1\BasicCore.dll
+C:\Users\Teu\source\repos\basic\BasicCore\obj\Debug\netcoreapp2.1\BasicCore.pdb

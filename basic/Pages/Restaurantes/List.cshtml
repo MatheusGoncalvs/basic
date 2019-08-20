@@ -1,9 +1,19 @@
-﻿@page 
+﻿@page
+
 @model ListModel
 @{
     ViewData["Title"] = "List";
 }
 
 <h2>List</h2>
-@Model.Message
-
+<table class="table">
+    @foreach (var restaurant in Model.Restaurantes)
+    {
+        <tr>
+            <td>@restaurant.Name</td>
+            <td>@restaurant.Location</td>
+            <td>@restaurant.Cozinha</td>
+        </tr>
+    }
+</table>
+<div>@Model.Message</div>
