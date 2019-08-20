@@ -4615,6 +4615,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "BasicCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/BasicCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicCore.dll": {}
+        }
+      },
+      "BasicData/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "BasicCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BasicData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicData.dll": {}
+        }
       }
     }
   },
@@ -12521,10 +12544,21 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "BasicCore/1.0.0": {
+      "type": "project",
+      "path": "../BasicCore/BasicCore.csproj",
+      "msbuildProject": "../BasicCore/BasicCore.csproj"
+    },
+    "BasicData/1.0.0": {
+      "type": "project",
+      "path": "../BasicData/BasicData.csproj",
+      "msbuildProject": "../BasicData/BasicData.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "BasicData >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12563,7 +12597,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Teu\\source\\repos\\basic\\BasicData\\BasicData.csproj": {
+              "projectPath": "C:\\Users\\Teu\\source\\repos\\basic\\BasicData\\BasicData.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
