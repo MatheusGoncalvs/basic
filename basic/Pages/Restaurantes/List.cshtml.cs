@@ -24,10 +24,10 @@ namespace basic.Pages.Restaurantes
             this.restauranteData = restauranteData;
         }
 
-        public void OnGet()
+        public void OnGet(string searchTerm)
         {
             Message = config["Message"];
-            Restaurantes = restauranteData.GetAll();
+            Restaurantes = restauranteData.GetRestaurantsByName(searchTerm);
         }
     }
 }
