@@ -1,0 +1,20 @@
+﻿@page
+@model DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>@Model.Restaurante.Name</h2>
+
+<div>
+    Id: @Model.Restaurante.Id
+</div>
+<div>
+    Location: @Model.Restaurante.Location
+</div>
+<div>
+    Cousine: @Model.Restaurante.Cozinha
+</div>
+
+<a asp-page="./List" class="btn btn-default">All Restaurants</a>
+
