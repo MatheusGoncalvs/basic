@@ -12,9 +12,10 @@ namespace basic.Pages.Restaurantes
     {
         public Restaurante Restaurante { get; set; }
 
-        public void OnGet()
+        public void OnGet(int restaurantId)
         {
             Restaurante = new Restaurante();
+            Restaurante.Id = restaurantId;
         }
     }
 }
