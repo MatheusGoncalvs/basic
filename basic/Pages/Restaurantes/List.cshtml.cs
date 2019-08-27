@@ -18,16 +18,19 @@ namespace basic.Pages.Restaurantes
         public string Message { get; set; }
         public IEnumerable<Restaurante> Restaurantes { get; set; }
 
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
+
         public ListModel(IConfiguration config, IRestauranteData restauranteData)
         {
             this.config = config;
             this.restauranteData = restauranteData;
         }
 
-        public void OnGet(string searchTerm)
+        public void OnGet()
         {
             Message = config["Message"];
-            Restaurantes = restauranteData.GetRestaurantsByName(searchTerm);
+            Restaurantes = restauranteData.GetRestaurantsByName(SearchTerm);
         }
     }
 }
