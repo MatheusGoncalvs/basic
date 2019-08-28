@@ -36,3 +36,5 @@ C:\Users\Teu\source\repos\basic\basic\bin\Debug\netcoreapp2.1\BasicData.dll
 C:\Users\Teu\source\repos\basic\basic\bin\Debug\netcoreapp2.1\BasicData.pdb
 C:\Users\Teu\source\repos\basic\basic\bin\Debug\netcoreapp2.1\BasicCore.pdb
 C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurantes\Detail.g.cshtml.cs
+C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurantes\NotFound.g.cshtml.cs
+C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurantes\Edit.g.cshtml.cs
