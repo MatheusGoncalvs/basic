@@ -15,6 +15,7 @@ namespace basic.Pages.Restaurantes
         private readonly IRestauranteData restauranteData;
         private readonly IHtmlHelper htmlHelper;
 
+        [BindProperty]
         public Restaurante Restaurante { get; set; }
         //Atributo para manter os itens do select baseado em um Enum.(IHtmlHelper)
         public IEnumerable<SelectListItem> Cuisines { get; set; }
@@ -33,6 +34,13 @@ namespace basic.Pages.Restaurantes
             {
                return RedirectToPage("./NotFound");
             }
+            return Page();
+        }
+
+        public IActionResult OnPost()
+        {
+            Restaurante = restauranteData.Update(Restaurante);
+            restauranteData.Commit();
             return Page();
         }
     }
