@@ -9,7 +9,9 @@ namespace BasicData
     public interface IRestauranteData
     {
         IEnumerable<Restaurante> GetRestaurantsByName(string name);
+        Restaurante GetById(int id);
     }
+
     public class InMemoryRestaurantData : IRestauranteData
     {
         readonly List<Restaurante> restaurantes;
@@ -22,6 +24,11 @@ namespace BasicData
                 new Restaurante {Id = 2, Name = "La Casine", Cozinha = TipoCozinha.Italiana, Location = "São Paulo"},
                 new Restaurante {Id = 3, Name = "Fausto's Pizza", Cozinha = TipoCozinha.Brasileira, Location = "Rio de Janeiro"}
             };
+        }
+
+        public Restaurante GetById(int id)
+        {
+            return restaurantes.SingleOrDefault(r => r.Id == id);
         }
 
         public IEnumerable<Restaurante> GetRestaurantsByName(string name = null)
