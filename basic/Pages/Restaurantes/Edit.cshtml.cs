@@ -30,19 +30,25 @@ namespace basic.Pages.Restaurantes
         {
             Cuisines = htmlHelper.GetEnumSelectList<TipoCozinha>();
             Restaurante = restauranteData.GetById(restaurantId);
-            if(Restaurante == null)
+            if (Restaurante == null)
             {
-               return RedirectToPage("./NotFound");
+                return RedirectToPage("./NotFound");
             }
             return Page();
         }
 
         public IActionResult OnPost()
         {
+            //Testa se todas as validações passaram e faz o update
+            if (ModelState.IsValid)
+            {
+                restauranteData.Update(Restaurante);
+                restauranteData.Commit();
+            }
+
             //Recupera o Enum também no POST
             Cuisines = htmlHelper.GetEnumSelectList<TipoCozinha>();
-            restauranteData.Update(Restaurante);
-            restauranteData.Commit();
+            
             return Page();
         }
     }
