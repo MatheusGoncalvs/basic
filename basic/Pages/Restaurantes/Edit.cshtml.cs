@@ -39,7 +39,9 @@ namespace basic.Pages.Restaurantes
 
         public IActionResult OnPost()
         {
-            Restaurante = restauranteData.Update(Restaurante);
+            //Recupera o Enum também no POST
+            Cuisines = htmlHelper.GetEnumSelectList<TipoCozinha>();
+            restauranteData.Update(Restaurante);
             restauranteData.Commit();
             return Page();
         }
