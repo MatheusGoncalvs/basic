@@ -44,6 +44,8 @@ namespace basic.Pages.Restaurantes
             {
                 restauranteData.Update(Restaurante);
                 restauranteData.Commit();
+                //passa o rota com o id que a view está esperando
+                return RedirectToPage("./Detail", new { restaurantId = Restaurante.Id});
             }
 
             //Recupera o Enum também no POST
