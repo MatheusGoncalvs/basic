@@ -26,10 +26,18 @@ namespace basic.Pages.Restaurantes
             this.htmlHelper = htmlHelper;
         }
 
-        public IActionResult OnGet(int restaurantId)
+        //Método transformado em opcional serve tanto para editar quanto pra cadastrar.
+        public IActionResult OnGet(int? restaurantId)
         {
             Cuisines = htmlHelper.GetEnumSelectList<TipoCozinha>();
-            Restaurante = restauranteData.GetById(restaurantId);
+            if(restaurantId.HasValue)
+            {
+                Restaurante = restauranteData.GetById(restaurantId.Value);
+            }else
+            {
+                Restaurante = new Restaurante();
+            }
+            
             if (Restaurante == null)
             {
                 return RedirectToPage("./NotFound");
