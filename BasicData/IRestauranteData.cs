@@ -10,6 +10,7 @@ namespace BasicData
     {
         IEnumerable<Restaurante> GetRestaurantsByName(string name);
         Restaurante GetById(int id);
+        Restaurante Add(Restaurante newRestaurant);
         Restaurante Update(Restaurante updatedRestaurant);
         int Commit();
     }
@@ -31,6 +32,13 @@ namespace BasicData
         public int Commit()
         {
             return 0;
+        }
+
+        public Restaurante Add(Restaurante newRestaurant)
+        {
+            restaurantes.Add(newRestaurant);
+            newRestaurant.Id = restaurantes.Max(r => r.Id) + 1;
+            return newRestaurant;
         }
 
         public Restaurante Update(Restaurante updatedRestaurant)
