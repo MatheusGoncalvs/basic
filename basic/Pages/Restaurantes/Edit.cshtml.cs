@@ -47,19 +47,24 @@ namespace basic.Pages.Restaurantes
 
         public IActionResult OnPost()
         {
-            //Testa se todas as validações passaram e faz o update
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
+            {
+                Cuisines = htmlHelper.GetEnumSelectList<TipoCozinha>();
+                return Page();
+            }
+            //Como a página Edit é reutilizada verifica se: update ou add a restaurant
+            if(Restaurante.Id > 0)
             {
                 restauranteData.Update(Restaurante);
-                restauranteData.Commit();
-                //passa o rota com o id que a view está esperando
-                return RedirectToPage("./Detail", new { restaurantId = Restaurante.Id});
+            }else
+            {
+                restauranteData.Add(Restaurante);
             }
-
-            //Recupera o Enum também no POST
-            Cuisines = htmlHelper.GetEnumSelectList<TipoCozinha>();
             
-            return Page();
+            restauranteData.Commit();
+            return RedirectToPage("./Detail", new { restaurantId = Restaurante.Id });
+
+
         }
     }
 }
