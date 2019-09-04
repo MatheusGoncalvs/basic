@@ -6,8 +6,14 @@ using System.Text;
 
 namespace BasicData
 {
-    class BasicDbContext : DbContext
+    public class BasicDbContext : DbContext
     {
+        public BasicDbContext(DbContextOptions<BasicDbContext> options)
+            : base(options)
+        {
+
+        }
+
         public DbSet<Restaurante> restaurantes { get; set; }
     }
 }
