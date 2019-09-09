@@ -30,8 +30,8 @@ namespace basic
             {
                 options.UseSqlServer(Configuration.GetConnectionString("basicDb"));
             });
-
-            services.AddSingleton<IRestauranteData, InMemoryRestaurantData>();
+            //Scoped faz uma instância para cada  requisição diferente HTTP; O DbContext consegue coletar todas as informações numa única conexão;
+            services.AddScoped<IRestauranteData, SqlRestaurantData>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
