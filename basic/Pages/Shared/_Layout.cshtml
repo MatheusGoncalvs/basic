@@ -45,6 +45,7 @@
         @RenderBody()
         <hr />
         <footer>
+            @RenderSection("footer", required: false)
             <p>&copy; 2019 - basic</p>
         </footer>
     </div>
@@ -69,6 +70,10 @@
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
+
+    @section footer {
+        <div>Podemos redenrizar seções específicas no conteúdo cshtml</div>
+    }
 
     @RenderSection("Scripts", required: false)
 </body>
