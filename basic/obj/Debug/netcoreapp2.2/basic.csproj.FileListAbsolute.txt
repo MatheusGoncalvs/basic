@@ -39,3 +39,4 @@ C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.2\basic.csproj.CopyC
 C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.2\basic.dll
 C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.2\basic.pdb
 C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.2\Razor\Pages\Restaurantes\Delete.g.cshtml.cs
+C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout2.g.cshtml.cs
