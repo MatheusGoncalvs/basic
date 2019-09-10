@@ -1,0 +1,29 @@
+﻿@using BasicCore
+@model Restaurante
+
+<div class="painel painel-default">
+    <div class="painel-heading">
+        <h3>@Model.Name</h3>
+    </div>
+    <div class="painel-body">
+        <span>Location: @Model.Location</span>
+        <span>Cuisine: @Model.Cozinha</span>
+    </div>
+    <div class="painel-footer">
+        <a class="btn btn-lg"
+           asp-page="./Detail"
+           asp-route-restaurantId="@Model.Id">
+            <i class="glyphicon glyphicon-zoom-in"></i>
+        </a>
+        <a class="btn btn-lg"
+           asp-page="./Edit"
+           asp-route-restaurantId="@Model.Id">
+            <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn btn-lg"
+           asp-page="./Delete"
+           asp-route-restaurantId="@Model.Id">
+            <i class="glyphicon glyphicon-trash"></i>
+        </a>
+    </div>
+</div>
