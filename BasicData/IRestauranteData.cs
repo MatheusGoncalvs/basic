@@ -11,6 +11,7 @@ namespace BasicData
         Restaurante Add(Restaurante newRestaurant);
         Restaurante Update(Restaurante updatedRestaurant);
         Restaurante Delete(int id);
+        int GetCountOfRestaurant();
         int Commit();
     }
 }

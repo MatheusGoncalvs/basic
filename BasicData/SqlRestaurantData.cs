@@ -39,6 +39,11 @@ namespace BasicData
         {
             return db.restaurantes.Find(id);
         }
+        //Retorna o total de restaurantes
+        public int GetCountOfRestaurant()
+        {
+            return db.restaurantes.Count();
+        }
 
         public IEnumerable<Restaurante> GetRestaurantsByName(string name)
         {

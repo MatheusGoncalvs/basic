@@ -65,5 +65,10 @@ namespace BasicData
             }
             return restaurant;
         }
+
+        public int GetCountOfRestaurant()
+        {
+            return restaurantes.Count();
+        }
     }
 }
