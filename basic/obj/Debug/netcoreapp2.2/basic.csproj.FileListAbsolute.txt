@@ -42,3 +42,4 @@ C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.2\Razor\Pages\Restau
 C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout2.g.cshtml.cs
 C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.2\Razor\Pages\Restaurantes\_Summary.g.cshtml.cs
 C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\Components\Restaurant\Default.g.cshtml.cs
+C:\Users\Teu\source\repos\basic\basic\obj\Debug\netcoreapp2.2\Razor\Pages\Restaurantes\ClienteRestaurants.g.cshtml.cs

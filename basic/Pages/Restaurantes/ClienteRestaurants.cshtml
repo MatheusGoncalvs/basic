@@ -1,0 +1,20 @@
+﻿@page
+@model basic.Pages.Restaurantes.ClienteRestaurantsModel
+@{
+    ViewData["Title"] = "ClienteRestaurants";
+}
+
+<h2>ClienteRestaurants</h2>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $.ajax("/api/restaurantes/",
+                { method: "get" })
+                .then(function (response) {
+                    console.dir(response);
+                });
+        });
+    </script>
+}
+
